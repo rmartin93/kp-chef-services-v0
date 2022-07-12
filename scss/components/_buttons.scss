@@ -1,15 +1,29 @@
-// .button {
-// cursor: pointer;
-// border: 0;
-// text-transform: uppercase;
-// font-weight: $fw-700;
-// color: clr(neutral, 100);
-// background-color: clr(primary, 400);
-// padding: 1em 1.5em;
+@use "../abstracts/" as *;
+.btn {
+	cursor: pointer;
+	text-transform: uppercase;
+	font-weight: fw(bold);
+	padding: size(18) size(36);
+	&--primary {
+		border: 3px solid clr(primary, 400);
+		color: clr(neutral, 900);
+		background-color: clr(primary, 400);
 
-// &:hover,
-// &:focus {
-// 	color: clr(neutral, 100);
-// 	background-color: rgb(clr(neutral, 900), 0.7);
-// }
-// }
+		&:hover,
+		&:focus {
+			border: 3px solid clr(primary, 500);
+			background-color: clr(primary, 500);
+		}
+	}
+	&--secondary {
+		border: 3px solid clr(neutral, 100);
+		color: clr(neutral, 100);
+		background-color: transparent;
+
+		&:hover,
+		&:focus {
+			color: clr(neutral, 900);
+			background-color: clr(neutral, 100);
+		}
+	}
+}

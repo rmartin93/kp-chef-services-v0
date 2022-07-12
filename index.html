@@ -5,10 +5,44 @@
 		<link rel="icon" type="image/svg+xml" href="favicon.svg" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Vite App</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lato:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
 		<link rel="stylesheet" href="/scss/main.scss" />
 	</head>
 	<body>
-		<div id="app"></div>
+		<header>
+			<nav class="nav | centered-rows">
+				<div class="nav--image | margin-block-26">
+					<img src="img/logo.png" alt="Logo" />
+				</div>
+				<ul class="nav--links | flex-row-48 margin-block-end-80">
+					<li>
+						<a href="#about">About</a>
+					</li>
+					<li>
+						<a href="#meals">Meals</a>
+					</li>
+					<li>
+						<a href="#testimonials">Testimonials</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="hero | centered-rows margin-block-start-80">
+				<h1 class="hero--title | clr-neutral-100">
+					Homecooked meals <br />delivered straight to your door
+				</h1>
+				<div class="hero--buttons | margin-block-start-48">
+					<button class="btn btn--primary | margin-inline-end-16">
+						Place Order
+					</button>
+					<button class="btn btn--secondary">More Info</button>
+				</div>
+			</div>
+		</header>
 		<script type="module" src="/main.js"></script>
 	</body>
 </html>

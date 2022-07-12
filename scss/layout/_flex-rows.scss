@@ -1,0 +1,6 @@
+@use "../abstracts" as *;
+
+.flex-row-48 {
+	display: flex;
+	gap: size(48);
+}

@@ -4,6 +4,10 @@
 	.flex-row-gap-#{$size-name} {
 		display: flex;
 		gap: $size-value;
+		flex-wrap: wrap;
+		& > * {
+			flex-shrink: 0;
+		}
 	}
 }
 

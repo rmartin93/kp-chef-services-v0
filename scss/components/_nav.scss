@@ -9,6 +9,9 @@
 		text-decoration: none;
 		color: clr(neutral, 100);
 		cursor: pointer;
+		&:hover {
+			color: clr(primary, 400);
+		}
 	}
 }
 

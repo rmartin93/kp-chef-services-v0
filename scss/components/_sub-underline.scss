@@ -1,0 +1,19 @@
+@use "../abstracts" as *;
+.sub-underline::after {
+	content: "";
+	display: block;
+	height: 2px;
+	width: 10rem;
+	background-color: clr(neutral, 400);
+	margin-inline: auto;
+	margin-block: 2.25rem;
+}
+.sub-underline-light::after {
+	content: "";
+	display: block;
+	height: 1px;
+	width: 10rem;
+	background-color: clr(neutral, 100);
+	margin-inline: auto;
+	margin-block: 2.25rem;
+}

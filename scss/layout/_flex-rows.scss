@@ -1,6 +1,14 @@
 @use "../abstracts" as *;
 
-.flex-row-48 {
-	display: flex;
-	gap: size(48);
+@each $size-name, $size-value in $flex-sizes {
+	.flex-row-gap-#{$size-name} {
+		display: flex;
+		gap: $size-value;
+	}
+}
+
+@each $size-name, $size-value in $flex-sizes {
+	.flex-basis-#{$size-name} {
+		flex-basis: $size-value;
+	}
 }

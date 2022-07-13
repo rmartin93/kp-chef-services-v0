@@ -1,5 +1,9 @@
 @use "../abstracts/" as *;
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	font-size: fs(400);
 	font-weight: fw(normal);
@@ -11,11 +15,7 @@ body {
 }
 
 h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h2 {
 	font-family: $ff-abril;
 	line-height: 1.3em;
 }

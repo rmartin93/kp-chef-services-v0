@@ -1,0 +1,25 @@
+.meals {
+	&--card {
+		position: relative;
+		overflow: hidden;
+		&:hover .meals--content {
+			bottom: 0;
+		}
+	}
+	&--content {
+		position: absolute;
+		bottom: -100%;
+		background: rgba(0, 0, 0, 0.4);
+		backdrop-filter: blur(5px);
+		margin-bottom: 8px;
+		transition: 350ms;
+		& h5 {
+			margin-left: 2rem;
+			margin-top: 2rem;
+		}
+		& p {
+			margin-left: 2rem;
+			margin-bottom: 2rem;
+		}
+	}
+}
